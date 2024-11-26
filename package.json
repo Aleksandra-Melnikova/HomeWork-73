@@ -1,10 +1,10 @@
 {
   "name": "01",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "01/index.js",
   "scripts": {
-    "build": "node index.js",
-    "dev": "nodemon index.js",
+    "build": "node 02and01/index.js",
+    "dev": "nodemon 02and01/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,6 +15,7 @@
     "nodemon": "^3.1.7"
   },
   "dependencies": {
+    "caesar-salad": "^2.1.0",
     "express": "^4.21.1"
   }
 }
