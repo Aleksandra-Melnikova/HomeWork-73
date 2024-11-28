@@ -13,12 +13,12 @@ app.get('/:response', (req, res) => {
     return res.send(`${req.params.response}`);
 });
 
-app.get(`/encode/:password`, (req, res) => {
-    return res.send(Vigenere.Cipher(`${password}`).crypt(`${req.params.password}`));
+app.get(`/encode/:text`, (req, res) => {
+    return res.send(Vigenere.Cipher(`${password}`).crypt(`${req.params.text}`));
 });
 
-app.get(`/decode/:password`, (req, res) => {
-    return res.send(Vigenere.Decipher(`${password}`).crypt(`${req.params.password}`));
+app.get(`/decode/:text`, (req, res) => {
+    return res.send(Vigenere.Decipher(`${password}`).crypt(`${req.params.text}`));
 });
 
 app.listen(port, () => {
